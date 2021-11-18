@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro World</title>
+    <link rel="icon" href="icon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="explore.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;">
+    <div>
+        <img src="explore.jpg" width="100%">
+        <div class=" big-heading top-left">Explore Farming !</div>
+        <div class="top-right">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="btn btn-success"><i class="fas fa-search"></i> Search For Crops</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#crop1" onclick="showAndHidecrop1()">Rice</a>
+              <a href="#crop2" onclick="showAndHidecrop2()">Wheat</a>
+              <a href="#crop3" onclick="showAndHidecrop3()">Maize</a>
+              <a href="#crop4" onclick="showAndHidecrop4()">Jowar</a>
+              <a href="#crop5" onclick="showAndHidecrop5()">Cotton</a>
+              <a href="#crop6" onclick="showAndHidecrop6()">Sugarcane</a>
+              <a href="#crop7" onclick="showAndHidecrop7()">Mustard</a>
+              <a href="#crop8" onclick="showAndHidecrop8()">Groundnut</a>
+              <a href="#crop9" onclick="showAndHidecrop9()">Red Gram</a>
+              <a href="#crop10" onclick="showAndHidecrop10()">Soya Bean</a>
+              <a href="#crop11" onclick="showAndHidecrop11()">Black Gram</a>
+              <a href="#crop12" onclick="showAndHidecrop12()">Sesame</a>
+              <a href="#crop13" onclick="showAndHidecrop13()">Turmeric</a>
+              <a href="#crop14" onclick="showAndHidecrop14()">Jute</a>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div id="crops1" style="display: none;">
+        <div class="card">
+          <div class="card-header" id="headingOne" style="background-color:green;">
+            <h2 class="mb-0">
+              <button class="btn btn-link" id ="crop1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: white; font-size: 25px;">
+                <b>Rice <i class="arrow down"></i></b>
+              </button>
+            </h2>
+          </div>
+          
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body" style="background-color:orangered">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                    <div class="collapse" id="collapseExample1">
+                      <div class="card card-body">
+                        Rice is propagated directly from seed and sown on wet or dry seed beds or used to grow transplants in a nursery bed. Transplants produced in a nursery are always planted in dry seed beds when they are transferred to the field. Seeds may be sown in the field by broadcasting or by mechanical drilling. Three main methods are used for direct seeding rice in lowland areas: dry seedbeds, wet seedbeds and dapog. Dry seedbeds are prepared in close proximity to a water source. Each bed is generally 1.5 m (4.9 ft) in width and is seeded at a rate of 10 kg of seed for every 10 square meters. The seeds are covered with a light layer of soil and the bed is saturated with water until the seeds germinate. Wet seedbeds are raised nursery beds in which pre-germinated seeds are sown. The bed is puddled or wet with water and the germinated seeds are spread out uniformly and kept wet. When the seedling reach 2-3 cm (0.8–1.2 in) in height, shallow irrigation is used and the water levels in the bed are increased as the plants grow. Dapod is a method of producing transplants on a mat made of banana leaves of plastic sheeting which is used in some areas of the Philippines. Pre-germinated seeds are spread out on cement of wet soil and covered with the leaves or plastic sheeting. The cover is pushed down onto the seeds and continuously watered. After 11 days, the mat is rolled up and transferred to to the field. 
+Rice can be harvested using the traditional method of cutting by hand. Rice should be cut when 80–85% of the panicles have turned from green to straw colored. When harvested by hand, the rice is cut using sharp knives or sickles. Rice can be  mechanically harvested using threshers or combines.
+                      </div>
+                    </div>            
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="card card-body">
+                        Rice is mainly grown in warmer regions as the plants will not grow at temperatures below 10°C. Rice is considered to be a semi-aquatic annual grass and is commonly grown in paddies in wetlands or under shallow water.Heavy solis for example clay or clay loam are well suited to the rice as they have very good water holding capacity. Heavy solis for example clay or clay loam are well suited to the rice as they have very good water holding capacity.
+                      </div>
+                    </div>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                    <div class="collapse" id="collapseExample3">
+                      <div class="card card-body">
+                        Leaf Blast : <br>
+            Lesions on all parts of shoot; white to green or gray diamond-shaped lesions with dark green borders; death of leaf blades; black necrotic patches on culm; rotting panicles.
+
+          <br> Sheath Blight :  <br>
+
+            Circular, oblong or elliptical, green to gray water-soaked spots on leaf sheaths; lesions with pale green or white center and purple-brown margin; lesions covering leaf sheaths and stems; poorly filled grains.
+                      </div>
+                    </div>        
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="card card-body">
+                        Recilia Dorsalis <br>
+                        Nilapurvata Lugens <br>
+                        Laodelphax Striatellus <br>
+                        Sagotella Furcifera <br>
+                      </div>
+                    </div>                      
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                    <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                          <h4 style="text-align: center;"> Fertilizers </h4>
+                          Fertilizer N use efficiency in lowland rice may be maximized through a better timing of application to coincide with the stages of peak requirement of the crop, and placement of N fertilizer in the soil.Proper phosphorus (P) nutrition is critical for producing maximum rice grain yields.Phosphorus is very important in the early vegetative growth stages. Phosphorus promotes strong early plant growth and development of a strong root system. Potassium fertilization increases yields.                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                          <h4 style="text-align: center;"> Strategies</h4>
+                          Control of pests and diseases is dependent on the use of resistant rice varieties and on planting of treated seed. Grow resistant varieties. Treat the seeds with suitable fungicide. Apply only recommended quantity of nitrogen fertilizer in split dose. Plow stubble and straw into soil after harvest.Crop rotation can effectively help in reducing the pests.                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="crops2" style="display: none;">
+          <div class="card">
+            <div class="card-header" id="headingOne" style="background-color:green;">
+              <h2 class="mb-0">
+                <button class="btn btn-link" id ="crop2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="color: white; font-size: 25px;">
+                  <b>Wheat <i class="arrow down"></i></b>
+                </button>
+              </h2>
+            </div>
+            
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="background-color:orangered">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                      <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                          Planting Wheat varieties should be planted in the Fall approximately 6 to 8 weeks before the first frost date. Wheat should be planted as soon as the soil can be worked in the Spring. Commercially grown wheat is usually mechanically drilled using a machine that creates a furrow and drops the seed in before covering it back up. 
+                          Wheat seeds can be sown by hand broadcasting in smaller areas, or using a hand-cranked seeder. Seeds are usually sown to at depths ranging from 2 to 12 cm (0.8–4.7 in) depending on soil conditions (seed must be sown deeper in drier soil). Once the seeds have been scattered, the soil should be raked lightly to set the seeds at the desired depth.
+                          Harvesting Wheat is ready to harvest when the stalks and heads have turned from green to yellow and the seed heads are drooping towards the ground. Check the seeds for ripeness before harvest. The should be firm and crunchy and not doughy in texture. Commercially produced wheat is usually harvested using a combine. Smaller plots can be harvested by hand using a scythe or sickle. Small plots can be harvested by snipping off the heads with a pair of scissors.
+                          </div>
+                      </div>            
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                      <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                          Wheat can be grown in a wide variety of climates but grows best in cool regions where the temperature is between 10 and 24°C (50–75°F). Clay loam land is more suitable for cultivating Wheat. Wheat will not grow at temperatures above 35°C (95°F). Wheat will grow optimally in a deep, fertile, well draining and well aerated soil at a pH between 5.5 and 7.5.                        </div>
+                      </div>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                      <div class="collapse" id="collapseExample7">
+                        <div class="card card-body">
+                          Black Chaff : <br>
+                          Sudden appearance of water-soaked, light brown, elongated lesions on upper leaves; lesions quickly dry out and turn into necrotic streaks on the leaves; black stripes occur on glumes and purple black lesions appear on rachis and peduncle if infection is in the head.
+                         <br> Barley Yellow Dwarf : <br>
+                          Yellowing leaves, particularly the flag leaves; stunted plants due to shortened internodes; leaves may be red, purpple, orange, green or brown; leaves may be distorted.
+                         <br> Crown and Root Rot : <br>
+                          The infected plants become chlorotic and/ stunted. Often the symptom is confused with nitrogen deficiency. And the plants may produce shriveled grain. Even a mild infection reduce tillers, plant population and maturity. Since symptom appear through out the field make if difficult to diagnose the disease.
+                          </div>
+                      </div>       
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                      <div class="collapse" id="collapseExample8">
+                        <div class="card card-body">
+                          Diuraphis noxia <br>
+                          Sitobion avenae
+                          </div>
+                      </div>                       
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExample3 multiCollapseExample4" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                      <div class="row">
+                      <div class="col">
+                        <div class="collapse multi-collapse2" id="multiCollapseExample3">
+                          <div class="card card-body">
+                            <h4 style="text-align: center;"> Fertilizers </h4>
+                            Potassium Sulphate and Muriate of Potash is essential for all processes needed to sustain plant growth and reproduction. These provides resistance to pests, diseases and nematode attacks. Potassium improves the overall health of growing plants and helps them fight against disease. Potassium affects quality factors such as size, shape, color and vigor of the seed or grain.                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="collapse multi-collapse2" id="multiCollapseExample4">
+                          <div class="card card-body">
+                            <h4 style="text-align: center;"> Strategies </h4>
+                            Avoid planting seed from infected fields; avoid overhead irrigation; plant less susceptible cultivars. Control of aphid population can provide some control of disease but is dependent on knowing which aphids are active in the field; planting to avoid periods of peak aphid activity can provide a measure of control. Use good quality seeds. Provide supplemental phosphorous. Sowing when soil temperature is about 50 F increase germination and establishment. Seed treatment with suitable fungicides.                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div id="crops3" style="display: none;">
+            <div class="card">
+              <div class="card-header" id="headingOne" style="background-color:green;">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" id ="crop3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="color: white; font-size: 25px;">
+                    <b>Maize <i class="arrow down"></i></b>
+                  </button>
+                </h2>
+              </div>
+              
+              <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body" style="background-color:orangered">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                        <div class="collapse" id="collapseExample9">
+                          <div class="card card-body">
+                            Maize can be propagated directly from seed.Planting dates for maize depend on the variety being grown. Standard varieties should be planted when the soil has warmed to at least 12.7°C (55°F) and supersweet varieties when the soil reaches 18.3°C (65°F). Soil can be brought up to temperature faster by laying black plastic mulches approximately 1 week prior to planting. Seeds should be sown about 2.5 cm (1 in) deep and 10–15 cm (~3–4 in) apart allowing 76–91 cm (~30–36 in) between rows. Maize should be planted in blocks (numerous rows) rather than in a single long row as it is wind pollinated and pollen can transfer between plants much more efficiently. Seedlings should be thinned to a final spacing 20–30 cm (8–12 in) when they are approximately 7.5–10.0 cm (3–4 in) in height. It is common to stagger maize plantings to ensure a continuous harvest over the summer months.
+                            Each maize stalk should produce 1 large ear of maize. Under ideal conditions, the stalk will produce a second, slightly smaller ear which reaches maturity slightly later than the first. Maize ears should be harvested at the “milk stage” of development, when the kernels within the husk are well packed and produce a milky substance when the kernel is punctured. Check ears for ripeness by gently peeling back a small portion of the husk. Be sure to check the ears frequently for ripeness and harvest as required as ears can quickly become over-ripe and lose their sweetness. Remove the ears from the stalk by pulling quickly downward while twisting and then refrigerate until consumption.
+                            </div>
+                        </div>            
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                        <div class="collapse" id="collapseExample10">
+                          <div class="card card-body">
+                            Maize is best grown in warm, tropical and sub-tropical regions and clay loamy regions as it requires warm soils to develop optimally. One of the most important requirements for growing maize is a high quality soil which is deep, fertile and well-draining with a pH between 6.0 and 6.8. Maize plants are very heavy feeders and even the most fertile of soils may need to supplemented with nutrients as the plants develop, particularly nitrogen. Maize also requires plenty of space as it grows and is pollinated by wind. It should be planted where it will receive full sunlight for most of the day and provided with ample moisture.                          </div>
+                        </div>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases<i class="arrow2 down2"></i></button>  <br>   
+                        <div class="collapse" id="collapseExample11">
+                          <div class="card card-body">
+                            Charcoal Rot :  <br>
+                            Symptoms are usually first apparent at the tasseling stage; plant stalks become shredded and pith is completely rotted with stringy strands of vascular tissue left intact; small, black fungal fruiting bodies are visible in the vascular strands and give the tissue a gray coloration; fungus grows into internodes of the stalk causing the plant to ripen early and causing the stalk to weaken; plant may break.
+                             <br>Common Rust : <br>
+                            Oval or elongated cinnamon brown pustules on upper and lower surfaces of leaves; pustules rupture and release powdery red spores; pustules turn dark brown-black as they mature and release dark brown powdery spores; if infection is severe, pustules may appear on tassels and ears and leaves may begin to yellow; in partially resistant corn hybrids, symptoms appear as chlorotic or necrotic flecks on the leaves which release little or no spore.
+                            <br>Bacterial Stalk Rot : <br>
+                            Plants suddenly beginning to lodge (bend to lie along the ground) midway through season; one or more internodes above soil line turning brown, water-soaked, soft and slimy; tissue has foul odor and mushy appearance;
+                           <br> Stewart’s Wilt : <br>
+                            The main symptoms are appearance of water soaked lesions initially. As the disease progress the lesions become long and turn pale yellow with irregular margins running in the length. The pathogen may infect the stem and causes stunting, wilting and death of plant.
+                            </div>
+                        </div> 
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>   
+                        <div class="collapse" id="collapseExample12">
+                          <div class="card card-body">
+                            Aphids <br>
+                            Corn earworms <br>
+                            Cut worms <br>
+                            Flea Beetles <br>
+                            </div>
+                        </div>                              
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapseExample5 multiCollapseExample6" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                        <div class="row">
+                        <div class="col">
+                          <div class="collapse multi-collapse3" id="multiCollapseExample5">
+                            <div class="card card-body">
+                              <h4 style="text-align: center;"> Fertilisers </h4>
+                              Nitrogen (N) is a macronutrient for corn. An estimate of N requirements for corn is 1 lb of N is needed for every bushel of grain produced, so a 200 bu corn crop would require 200 lb of N. A relatively new concept in N application rates is referred to as maximum return to N.                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="collapse multi-collapse3" id="multiCollapseExample6">
+                            <div class="card card-body">
+                              <h4 style="text-align: center;"> Strategies</h4>
+                              Grow available resistant varieties. Use certified healthy seeds. Remove the crop debris and burn them. Use suitable insecticide to control flea beetle. Plow all crop debris into soil in Fall; plant corn in well-draining soil to prevent waterlogged plants.Avoid stressing plants by practicing good water management.Rotate crops with small grains may help reduce disease incidence.
+                              The most effective method of controlling diseases is to plant resistant hybrids; application of appropriate fungicides may provide some degree on control and reduce disease severity; fungicides are most effective when the amount of secondary inoculum is still low, generally when plants only have a few rust pustules per leaf.
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div id="crops4" style="display: none;">
+              <div class="card">
+                <div class="card-header" id="headingOne" style="background-color:green;">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" id ="crop4" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="color: white; font-size: 25px;">
+                      <b>Jowar <i class="arrow down"></i></b>
+                    </button>
+                  </h2>
+                </div>
+                
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body" style="background-color:orangered">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                          <div class="collapse" id="collapseExample13">
+                            <div class="card card-body">
+                              Jowar is propagated directly from seed. Seed should only be sown in soils which have warmed to at least 18.3°C (65°F). Ideally, seeds should be sown in a finely prepared seed bed but seeds are often sown in furrows following plowing or broadcast. A wide range of row spacings are used successfully in Jowar cultivation with the final spacings being dependent of climatic conditions and available moisture. Under favorable conditions for sorghum growth, plants should be spaced 12–20 cm (4.7–7.9 in) apart, allowing 45–60 cm (17.7–23.6 in) between rows. This spacing produced an optimal planting density of approximately 120,000 plants per hectare.
+                              Jowar can be harvested by hand or by combine. When harvesting by hand, the heads or whole plants may be cut.Jowar should be harvested when the grain moisture content is between 18 and 23% and may be ready for harvest when the leaves are still green. After harvest, grains are removed from the heads by threshing.
+
+                             </div>
+                          </div>            
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample14" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                          <div class="collapse" id="collapseExample14">
+                            <div class="card card-body">
+                            Jowar is a warm-season grass which is adapted to grow in a wide range of soil types and climatic conditions, tolerating waterlogging and poor soils. It will perform optimally when planted in deep, fertile and well draining loam soils with a pH between 6.0 and 7.5. Jowar is best grown in hot tropical or semi tropical environments i.e., sandy loam but it will tolerate a range of temperatures. The crop tolerates hot, dry conditions better than corn or soybeans but it will be killed by frost. Soil temperatures of at least 18.3°C (65°F) are required for germination. 
+                            </div>
+                          </div>
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample15" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                          <div class="collapse" id="collapseExample15">
+                            <div class="card card-body">
+                              Anthracnose : <br>
+                              Small, circular red lesions with a distinct margin develop on leaves and stems; lesions may enalrge during humid weather conditions; plant becomes defoliated; tan spots with red margins may appear on upper parts of stems; plants may die before reaching maturity.
+                            
+                <br>Zonate Leaf Spot  :  <br>
+      
+                  Concentric or zoned patches of red and purple bands separated by straw colored or tan bands on leaves; spots often occur in a semi-circular pattern along leaf margins; salmon colored spore masses may develop on lesions during periods of wet weather.
+                            </div>
+                          </div>        
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample16" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                          <div class="collapse" id="collapseExample16">
+                            <div class="card card-body">
+                              Fungus <br>
+                            </div>
+                          </div>                      
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample7 multiCollapseExample8" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                          <div class="row">
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample7">
+                              <div class="card card-body">
+                                <h4 style="text-align: center;"> Fertilizers </h4>
+                                The cost of planting grain sorghum is much less expensive than other crops, primarily because of seed price. As a result, many growers assume they can save on other input costs as well. The best example of this involves the use of fertilizer. On a per bushel basis, grain sorghum requires a similar amount of most nutrients as corn. If a grower wants to produce a 100-bushel sorghum crop, the grower must support this yield goal with a supply of adequate nutrients, including phosphorus, nitrogen, sulfur and potassium.                       </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample8">
+                              <div class="card card-body">
+                                <h4 style="text-align: center;"> Strategies</h4>
+                                Plant resistant varieties; remove other susceptible plants e.g. Johnson grass; rotate crops; plow crop debris into soil after harvest. Concentric or zoned patches of red and purple bands separated by straw colored or tan bands on leaves; spots often occur in a semi-circular pattern along leaf margins; salmon colored spore masses may develop on lesions during periods of wet weather.         </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div id="crops5" style="display: none;">
+                <div class="card">
+                  <div class="card-header" id="headingOne" style="background-color:green;">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" id ="crop5" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" style="color: white; font-size: 25px;">
+                        <b>Cotton <i class="arrow down"></i></b>
+                      </button>
+                    </h2>
+                  </div>
+                  
+                  <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body" style="background-color:orangered">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample17" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                            <div class="collapse" id="collapseExample17">
+                              <div class="card card-body">
+                              Cotton is propagated from seed by planting directly in a prepared field when growing conditions are favorable (suitable temperature, adequate rainfall etc). Cotton should only be planted when the soil has warmed to at least 18.3°C (65°F). Generally, seeds should be sown at a depth of 0.25 cm (1 in), with 3–6 seed sown in each hole. Ridging the soil is recommended as it helps to drain the plant in wet conditions and also to conserve water in dry conditions. Plant spacing depends on the variety but generally 20–100 cm (7.9–39.4 in) should be left between plants. 
+                              Cotton is still picked by hand in many areas of the world where the crop is grown. In the US cotton is machine harvested. Cotton in ready to harvest approximately 4 months after sowing when the bolls split open to reveal the white cotton fibers. Fields are usually picked once every 3 to 4 weeks to prevent the fibers remaining in the field too long where they are susceptible to pests. The entire field is usually harvested with 2 to 3 pickings.
+                            </div>
+                            </div>            
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample18" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                            <div class="collapse" id="collapseExample18">
+                              <div class="card card-body">
+                                Cotton is best grown in desert conditions using irrigation. The seeds will germinate optimally at 34°C (93.2°F), while the seedlings requires a temperature between 24 and 29°C (75.2–84.2°F) to grow and develop properly. Cotton will grow on a variety of soils including sandy soil and heavy clay as long as it is water permeable and will grow optimally in a soil with a pH of 5.5–8.5. In addition cotton has a high tolerance for salt.
+                              </div>
+                            </div>
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample19" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                            <div class="collapse" id="collapseExample19">
+                              <div class="card card-body">
+                                Bacterial Blight : <br>
+                                Water-soaked spots on leaves which are delimited by leaf veins, giving them an angular appearance; lesions increase in size and turn black and necrotic; leaves drop from the plant; disease may also cause elongated gray-black lesions extending from the leaves to petioles and stem which are known as the "blackarm" phase; severe blackarm symptoms may cause the stem to be girdled; water-soaked lesions may be present on bolls; boll lesions enlarge and become sunken and brown-black in color.
+        
+                           <br>Alternaria Leaf Spot  :  <br>
+        
+                               Small, circular brown lesions on cotyledons and seedling leaves which expand and develop a concentric pattern; necrotic areas coalesce and often have a purple margin; centers of lesions may dry out and drop form the plant creating a "shot-hole" appearance on the leaves.
+                              </div>
+                            </div>        
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample20" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                            <div class="collapse" id="collapseExample20">
+                              <div class="card card-body">
+                                Aphids <br>
+                                Cotton Bollworm <br>
+                                
+                              </div>
+                            </div>                      
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample9 multiCollapseExample10" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                            <div class="row">
+                            <div class="col">
+                              <div class="collapse multi-collapse" id="multiCollapseExample9">
+                                <div class="card card-body">
+                                  <h4 style="text-align: center;"> Fertilizers </h4>
+                                Boron aids in efficient utilization of other nutrients including nitrogen and potassium, and can help move nitrogen and carbohydrates from leaves to developing fruit. It in turn helps assimilate these into complex carbohydrates and proteins, making cotton fiber. Boron is critical for the uptake of calcium (Ca) and helping improve Ca movement through the plant. When high levels of Ca are being applied, additional boron may be needed to maximize Ca uptake.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="collapse multi-collapse" id="multiCollapseExample10">
+                                <div class="card card-body">
+                                  <h4 style="text-align: center;"> Strategies</h4>
+                                  Plants stressed by drought, nutrient deficiency and other pests are more susceptible to the disease; fungus spreads rapidly in dense canopies, especially during periods of warm, wet weather. The use of resistant cotton varieties is the most effective method of controlling the disease; cultural practices such as plowing crop residue into soil after harvest can also limit disease emergence.                       </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div id="crops6" style="display: none;">
+                  <div class="card">
+                    <div class="card-header" id="headingOne" style="background-color:green;">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" id ="crop6" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix" style="color: white; font-size: 25px;">
+                          <b>Sugarcane <i class="arrow down"></i></b>
+                        </button>
+                      </h2>
+                    </div>
+                    
+                    <div id="collapseSix" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body" style="background-color:orangered">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample21" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                              <div class="collapse" id="collapseExample21">
+                                <div class="card card-body">
+                                Sugarcane is vegetatively propagated by planting part of a mature cane called “setts”. Setts should be cut from carefully selected mature canes. A few days before the cuttings are taken, the end of the canes are removed to break the apical dominance of the cane and promote the breaking of buds. The best cuttings are taken from the upper portions of the cane and should be approximately 40 cm (16 in) in length with 2–3 buds. Sugarcane setts should be planted horizontally or at a 45° angle in furrows 15–30 cm (6–12 in) deep. Once in the ground, the setts should be covered with a thin layer of soil. Setts can be grown in a nursery bed and transplanted to the field or planted directly at the final growing site. The average planting density for sugarcane is 15,000–24,000 cuttings per hectare of land. Normally furrow method of planting is followed. A new method called pit method of planting promises two to three times more yield and more ratoon (up to 10) compared to furrow method. 
+                                Sugarcane is most commonly harvested by hand cutting Stalks should be cut close to the ground with a sharp knife when the canes are fully mature.
+          
+                              </div>
+                              </div>            
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample22" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                              <div class="collapse" id="collapseExample22">
+                                <div class="card card-body">
+                                 Sugarcane grows best in tropical and subtropical regions as the plants require a warm, sunny and moist environment for growth. Red volconic and Alluvial soils of rivers are suitable to grow Sugarcane.Plants will grow optimally at temperatures between 26 and 33°C (78.8–91.4°F) where there are no frosts which will damage the plants. Sugarcane can be grown successfully in a variety of soils but will perform optimally in deep, well-draining soils, rich in organic matter with a pH between 5.0 and 8.0. Sugarcane requires an average annual rainfall of between 1800 and 2500 mm per year for adequate growth. If rainfall is too low, plants should be grown with irrigation to maximize yield.
+                                </div>
+                              </div>
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample23" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                              <div class="collapse" id="collapseExample23">
+                                <div class="card card-body">
+                                  Red Rot : <br>
+                      Lesions on all parts of shoot; white to green or gray diamond-shaped lesions with dark green borders; death of leaf blades; black necrotic patches on culm; rotting panicles.Yellowing, drying leaves; elongated red lesions on leaf midribs which may develop a straw yellow center; splitting open the stalk lengthwise reveals reddish patches of tissue interrupted by white areas; vascular tissue may also be red
+                    <br> Leaf Scald :  <br>
+      
+                      White "pencil line" extending the entire length of leaf lamina; etiolated leaves; leaf tips drying out resulting in a scalded appearance
+                      
+                                </div>
+                              </div>        
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample24" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                              <div class="collapse" id="collapseExample24">
+                                <div class="card card-body">
+                                  Fungus <br>
+                                  Bacteria <br>
+                                </div>
+                              </div>                      
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample11 multiCollapseExample12" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                              <div class="row">
+                              <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample11">
+                                  <div class="card card-body">
+                                    <h4 style="text-align: center;"> Fertilizers </h4>
+                                   Nitrogen is considered to be the most important nutrient, and plants absorb more nitrogen than any other element. Nitrogen is essential to in making sugarcane plants are healthy as they develop and nutritious to eat after they’re harvested. That’s because nitrogen is essential in the formation of protein, and protein makes up much of the tissues of most living things.
+                                    Phosphate, is linked to a Sugarcane ability to use and store energy, including the process of photosynthesis. It’s also needed to help Sugarcane grow and develop normally.
+                                                          </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample12">
+                                  <div class="card card-body">
+                                    <h4 style="text-align: center;"> Strategies</h4>
+                                    Planting resistant varieties of sugar cane is the most effective method of controlling the diseases; remove crop debris from the plantation to reduce inoculum levels; rogue diseased plants; harvest crop promptly if growing a susceptible variety; treating seed pieces with hot water prior to planting can reduce the incidence of the disease but foliar fungicide application has proved to be an ineffective method of control.
+                                    The most effective method of preventing the diseases is to plant resistant sugarcane varieties; treatment of seed cane with hot water to clean the material prior to planting can help to prevent the disease. </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div id="crops7" style="display: none;">
+                    <div class="card">
+                      <div class="card-header" id="headingOne" style="background-color:green;">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" id ="crop7" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" style="color: white; font-size: 25px;">
+                            <b>Mustard <i class="arrow down"></i></b>
+                          </button>
+                        </h2>
+                      </div>
+                      
+                      <div id="collapseSeven" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body" style="background-color:orangered">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample25" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                <div class="collapse" id="collapseExample25">
+                                  <div class="card card-body">
+                                    Mustards is propagated from seed and due to the small size of the seeds, should be planted in a well prepared seed bed which is firm and flat. Mustard seeds should be sown in Spring once soils have warmed to 4.4–7.2°C (40–45°F) and should be planted at a depth of 1.25–2.5 cm (0.5–1.0 in) at a density of 8–14 lbs of seeds per acre. The seed can be spread by broadcasting in the home garden or, in the case of commercial production, using a seed drill. Mustard generally matures in 80–85 days. 
+                                    The best method of preventing weed growth in a mustard field is to plant seeds at the appropriate depth. Shallow planted seeds germinate rapidly, allowing the development of a uniform plant stand. Established plants are less susceptible to competition from weeds. soil should be tested to determine nutrient requirements prior to planting. Mustard will benefit from the addition of supplemental nitrogen and this is generally applied at a rate of 100–120 lb per acre.
+                                    Mustard is generally ready to harvest 80 to 85 days after planting. The crop should be harvested promptly to reduce losses to shattering. In commercially grown fields the recommended method of harvest is swathing. The plants should be cut just below the height of the lowest seed pods. In the home garden, mustard can be harvested by hand by cutting the plants. The seeds can then be recovered from the pods and dried for storage.
+                                     
+                                  </div>
+                                </div>            
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample26" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                <div class="collapse" id="collapseExample26">
+                                  <div class="card card-body">
+                                    Mustard grows very well in cool climates with short growing seasons, at temperatures as low as 4.4°C (40°F).Clay loams are suitable to cultivate Mustard. Seedlings can tolerate some light frost but severe frost will kill the plants. The mustard plant can be grown in sandy, loamy or clay soils with a pH between 4.9 and 8.2 and prefers moist soil. The plant will tolerate partial shade.
+                                </div>
+                                </div>
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample27" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                <div class="collapse" id="collapseExample27">
+                                  <div class="card card-body">
+                               White Rust : <br>
+                               White pustules on cotyledons, leaves, stems and/or flowers which coalesce to form large areas of infection; leaves may roll and thicken. 
+                              <br>Bacterial Black Rot :  <br>
+                              Irregularly shaped dull yellow areas along leaf margins which expand to leaf midrib and create a characterstic "V-shaped" lesion; lesions may coalesce along the leaf margin to give plant a scorched appearance.
+                      
+                        
+                                  </div>
+                                </div>        
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample28" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                <div class="collapse" id="collapseExample28">
+                                  <div class="card card-body">
+                                    Fungus <br>
+                                    Flee Beetles <br>
+                                  </div>
+                                </div>                      
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample13 multiCollapseExample14" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                <div class="row">
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample13">
+                                    <div class="card card-body">
+                                      <h4 style="text-align: center;"> Fertilizers </h4>
+                                      Nitrogen (N) is essential for vigorous growth, high yield and quality of mustard. Nitrogen is essential in the production of plant proteins and chlorophyll, and is needed in the greatest amount compared to the other macronutrients. Nitrogen uptake and utilization takes place throughout the entire growth cycle. When plants are deficient in N they will have pale green to yellow foliage and the plants will often be spindly. Yellowing of the older leaves is another indication that the mustard may be deficient in N. Nitrogen is distributed from old leaves to younger leaves in the plant resulting in deficiency symptoms first appearing on older leaves. On a canopy level, when a crop is N deficient, the canopy will likely be thin and open and the flowering period will be shortened leading to reduced pod set and lower yield. </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="collapse multi-collapse" id="multiCollapseExample14">
+                                    <div class="card card-body">
+                                      <h4 style="text-align: center;"> Strategies</h4>
+                                      Rotate crops; plant only disease-free seed; apply appropriate fungicide if disease becomes a problem. Primary method of controlling diseases is through the use of good sanitation practices; rotate crops to non-cruciferous crops every 2 years; plant resistant varieties; control cruciferous weed species which may act as a reservoir for bacteria; plant pathogen-free seed.</div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div id="crops8" style="display: none;">
+                      <div class="card">
+                        <div class="card-header" id="headingOne" style="background-color:green;">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" id ="crop8" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight" style="color: white; font-size: 25px;">
+                              <b>Groundnut <i class="arrow down"></i></b>
+                            </button>
+                          </h2>
+                        </div>
+                        
+                        <div id="collapseEight" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body" style="background-color:orangered">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample29" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                  <div class="collapse" id="collapseExample29">
+                                    <div class="card card-body">
+                                   Groundnut is usually propagated from seed. Seeds should be planted in a well prepared seedbed in soil that is loose and crumbly with no large clumps. The seedbed should be free from weeds which will compete with the groundnut seedlings. Weeds may be removed by hand cultivating or through the use of an appropriate herbicide. Groundnut seeds should be planted by hand to a depth of 3–5 cm (1–2 in). It is best to ridge the soil or use flat beds as this will make harvesting the peanuts easier. Groundnuts can be grown a sole crop or intercropped with other crops such as corn (maize), cassava or soybean.
+                                   Groundnuts are ready for harvest between 85 and 130 days after sowing, depending on the variety. Pods can be harvested by hand or by mechanical means. Plants should be pulled from the ground and the pods removed. After harvest, pods are dried in the sun for 2–10 days until their moisture content is about 10%.
+                                  </div>
+                                  </div>            
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample30" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                  <div class="collapse" id="collapseExample30">
+                                    <div class="card card-body">
+                                      Groundnuts grow very well sandy or clay loam soil, requiring warm temperatures and a long growing season. Plants grow optimally at a temperatures between 30 and 34°C (86–93°F) although they will tolerate a range between 15 and 45°C (59–113°F). Temperatures above 34°C may damage flowers. The groundnut plant grows best in a light, well draining sandy loam, but may also grow in heavier soils. The optimal pH range for peanut growth is with a pH of 6.0-6.5. Groundnuts are resistant to drought and can withstand long periods without water albeit with a reduction in yield. For optimal production, a well distributed rainfall of between 500 and 600 mm of water over the course of the growing season is ideal. 
+                                    </div>
+                                  </div>
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample31" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                  <div class="collapse" id="collapseExample31">
+                                    <div class="card card-body">
+                                      Botrytis Blight : <br>
+                                      Numerous spots on upper surface of leaflets; entire plant or discrete parts may wilt and die; pods and stems become covered in fungal sclerotia.
+              
+                        <br>Sclerotinia Blight :  <br>
+                        Tips of infected branches wilt or flag rapidly; early signs of infection include the presence of small water-soaked lesions at the base of the stems which turn yellow or bleached; leaves on infected branches turn chlorotic and then wither; fluffy white fungal growth may appear on infected tissues during periods of high humidity.
+                        
+                                    </div>
+                                  </div>        
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample32" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                  <div class="collapse" id="collapseExample32">
+                                    <div class="card card-body">
+                                      Fungus <br>
+                                      Virus <br>
+                                    </div>
+                                  </div>                      
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample13 multiCollapseExample14" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                  <div class="row">
+                                  <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample13">
+                                      <div class="card card-body">
+                                        <h4 style="text-align: center;"> Fertilizers </h4>
+                                        Urea, Gypsum and Ammonium Sulphate effectively help in growth of plant.
+                                        Urea fertilizer provides nitrogen which helps in root growth.It also helps to increase fruit size including young fruit production.These help in the production of sugars and proteins in plants.They also increase the rate of absorption of all the other essential elements of the plant.</div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample14">
+                                      <div class="card card-body">
+                                        <h4 style="text-align: center;"> Strategies</h4>
+                                        Avoiding frost damage by planting early peanut varieties can help protect the plant from fungal colonization; application of appropriate foliar fungicides (e.g. benomyl). Plant seeds which are coated with protectants; avoid injuring plants with tools and/or machinery; application of appropriate fungicides can reduce crop losses when disease is present; avoid excessive irrigation during cool weather.
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div id="crops9" style="display: none;">
+                        <div class="card">
+                          <div class="card-header" id="headingOne" style="background-color:green;">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" id ="crop9" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine" style="color: white; font-size: 25px;">
+                                <b>Red Gram <i class="arrow down"></i></b>
+                              </button>
+                            </h2>
+                          </div>
+                          
+                          <div id="collapseNine" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body" style="background-color:orangered">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample33" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                    <div class="collapse" id="collapseExample33">
+                                      <div class="card card-body">
+                                      Red Gram is propagated directly from seed which should be sown in a prepared seed bed. Seeds should be planted to a depth of 2.5–10 cm (1–4 in) leaving 30–50 cm (12–20) between plants and 150 cm (60 in) between rows. Higher seeding rates should be used if the pant is being grown for use as a green manure. Red Gram is commonly intercropped with millets, cotton, sorghum or groundnut.
+                                      Red Gram is commonly harvested by hand. Machine harvesting by combine is possible if a variety is grown where pods ripen uniformly.
+                                      The plant is cut at the ground when the majority of pods have reached maturity. The plants are air dried and then threshed to remove the seeds.
+                                    </div>
+                                    </div>            
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample34" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                    <div class="collapse" id="collapseExample34">
+                                      <div class="card card-body">
+                                        Red Gram grows best in deep loam soil i.e., in hot humid climates where temperatures are between 18 and 38°C (64.4–100.4°F). The plants  can also be grown in a wide range of soils, from sandy soil to clay and also in soils with low fertility. Red Gram will grow optimally in a well drained soil with a pH between 5.0 and 7.0. Once established, Red Gram is relatively tolerant to drought conditions and can survive for long periods with little irrigation. 
+                                      </div>
+                                    </div>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample35" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                    <div class="collapse" id="collapseExample35">
+                                      <div class="card card-body">
+                                       Wilt  : <br>
+                                      Sudden yellowing of leaves; death of leaves; plant death; blackened tissue at base of stem; symptoms may be present on only one side of plant.
+                
+                                     <br> Leaf Miners :  <br>
+                                     Thin, white, winding trails on leaves; heavy mining can result in white blotches on leaves and leaves dropping from the plant prematurely; early infestation can cause fruit yield to be reduced; adult leafminer is a small black and yellow fly which lays its eggs in the leaf; larvae hatch and feed on leaf interior.
+                                     
+                                      </div>
+                                    </div>        
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample36" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                    <div class="collapse" id="collapseExample36">
+                                      <div class="card card-body">
+                                        Leaf Webber <br>
+                                        Pod Borer <br>
+                                      </div>
+                                    </div>                      
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample15 multiCollapseExample16" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                    <div class="row">
+                                    <div class="col">
+                                      <div class="collapse multi-collapse" id="multiCollapseExample15">
+                                        <div class="card card-body">
+                                          <h4 style="text-align: center;"> Fertilizers </h4>
+                                          Farmyard Manure is a valuable soil improver that enhances and restores a range of natural properties of the soil.It also increases soil fertility.FYM adds humus and slow-releasing nutrients to the soil.It aids water and nutrient retention.It helps break down heavy soils.Adds structure to light and sandy soils. It is ideal for mulching. </div>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="collapse multi-collapse" id="multiCollapseExample16">
+                                        <div class="card card-body">
+                                          <h4 style="text-align: center;"> Strategies</h4>
+                                          Practice long term crop rotation; avoid over or under watering plants. Rotate crops with non-hosts like cereals and corn; plant rows parallel to direction of prevailing winds to prevent spread of disease from secondary hosts nearby; avoid excessive s
+                                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div id="crops10" style="display: none;">
+                          <div class="card">
+                            <div class="card-header" id="headingOne" style="background-color:green;">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" id ="crop10" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen" style="color: white; font-size: 25px;">
+                                  <b>Soya Bean <i class="arrow down"></i></b>
+                                </button>
+                              </h2>
+                            </div>
+                            
+                            <div id="collapseTen" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body" style="background-color:orangered">
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample37" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                      <div class="collapse" id="collapseExample37">
+                                        <div class="card card-body">
+                                      Soybean is propagated directly from seed. If seeds are to planted in a field where soybean has not been been grown in the 3–5 year previous, they should first be inoculated with nitrogen fixing bacteria. The seedbed should be prepared prior to planting by removing any crop residue, weeds and large stones. Tilling the soil helps to break up large clods of earth. Seeds may be sown mechanically or by hand. in tilled soils, seeds are usually planted at a depth 3.2–4.5 cm (1.25 to 1.75 in) in rows spaced 30 cm (11.8 in) apart. Alternatively, no-till planting may be used to plant seeds in the stubble of a previous crop without first cultivating the soil. With this method, seeds are drilled into the soil in rows spaced 17.8 cm (7 in) apart. No-till practices reduce soil erosion and reduces the loss of moisture in the soil.
+                                      Soybeans are ready to harvest between 70 and 160 days after planting, depending on variety. Plants are ready for harvest when the leaves and stems have turned yellow and the seed pods brown to black. Soybeans for fresh use are cut while still green. Plants may be pulled by hand or cut with the use of a combine. Once cut, the seeds are removed from the pods by threshing.
+
+                                        </div>
+                                      </div>            
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample38" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                      <div class="collapse" id="collapseExample38">
+                                        <div class="card card-body">
+                                          Soybean is a short-day plant, requiring hot weather for optimum production. It can be grown year round in most parts of the tropics. Plants can be grown at ambient temperatures between 15 and 27°C (60–80°F) although temperature below 21°C (69.8°F) and above 32 (89.6°F) may reduce flowering. Temperatures exceeding 40°C (104°F) are detrimental to seed production. Soybeans are adapted to grow in a wide range of soils and climates but require adequate soil moisture for germination and seedling establishment. Plants are sensitive to waterlogging but are tolerant of drought conditions once established. Soybean grows best on a light, loose, well draining loam with a pH of 6.5. 
+                                        </div>
+                                      </div>
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample39" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                      <div class="collapse" id="collapseExample39">
+                                        <div class="card card-body">
+                                          Sudden Death Syndrome : <br>
+                                          First appear as small, pale green to yellow circular spots on the leaves during late vegetative or early reproductive growth stages. As the disease progresses, the areas between the leaf veins will first turn bright yellow, then eventually brown, with the veins remaining green. The brown tissue between veins may die and fall out, leaving large ragged holes and streaks in leaves. The leaves will detach from the petioles and fall to the ground. The petioles remain attached, giving the plant a somewhat skeletal appearance. Symptoms are generally more pronounced in the upper canopy. Flowers and pods may abort or not fill.
+                  
+                                         <br> Phytophthora :  <br>
+                                         Phytophthora sojae can infect soybeans at any growth stage from seed to maturity. Early season symptoms include seed rot and pre- and post emergence damping off. The most characteristic symptom of Phytophthora root rot is a dark brown lesion on the lower stem that extends up from the taproot of the plant. The lesion often reaches as high as several nodes and will girdle soybean stems, restricting flow of nutrients and water, and stunting or killing the plant.
+                            
+                                        </div>
+                                      </div>        
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample40" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                      <div class="collapse" id="collapseExample40">
+                                        <div class="card card-body">
+                                        Armyworms <br>
+                                        Mexican Bean Beetle <br>
+                                          
+                                        </div>
+                                      </div>                      
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample17 multiCollapseExample18" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                      <div class="row">
+                                      <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample17">
+                                          <div class="card card-body">
+                                            <h4 style="text-align: center;"> Fertilizers </h4>
+                                          Soybeans do not require high fertilizer application rates, yet, an accurate nutritional plan is necessary for increasing yields.
+                                           The crop classified as moderately sensitive to saline, with a salinity threshold of 2.0 dS/m. Soil pH of 6 – 6.8 is ideal.
+                                           Soybeans grains have a nitrogen content of 40%, therefore an adequate fertilization of nitrogen is a key factor in achieving high quality yields.</div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample18">
+                                          <div class="card card-body">
+                                            <h4 style="text-align: center;"> Strategies</h4>
+                                            The key in most areas is planting soybean varieties with the highest level of SDS resistance. Varieties should also be resistant to SCN, and crops should be rotated to manage SCN populations. Other tactics include reducing excessive soil moisture with drainage, minimizing compaction, and staggering planting dates.
+                                            Management of Phytophthora root rot involves the use of resistant rootstocks, irrigation management, fungicides, and fumigation. When replanting or establishing new plantings, choose resistant rootstocks where possible, but also consider tolerance to other diseases, nematodes, and cold. The most tolerant rootstocks are trifoliate orange, swingle citrumelo, citrange, Alemow, and sour orange.
+                                            Organic methods of controlling armyworms include biological control by natural enemies which parasitize the larvae and the application of Bacillus thuringiensis; there are chemicals available for commercial control but many that are available for the home garden do not provide adequate control of the larvae.                                                                  </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div id="crops11" style="display: none;">
+                            <div class="card">
+                              <div class="card-header" id="headingOne" style="background-color:green;">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link" id ="crop11" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven" style="color: white; font-size: 25px;">
+                                    <b> Black Gram <i class="arrow down"></i></b>
+                                  </button>
+                                </h2>
+                              </div>
+                              
+                              <div id="collapseEleven" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body" style="background-color:orangered">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample41" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                        <div class="collapse" id="collapseExample41">
+                                          <div class="card card-body">
+                                            The Black Gram seeds are sown at 2 cm depth with a spacing of 10 cm and 30 cm between rows in the main field. Black gram crop is very sensitive to irrigation. Fields must be constantly monitored for any drought conditions. 
+                                            If this crop is not irrigated properly, pulse crop shed flowers. Plants without water produce seeds that are small and hard with low vigor. Because of this problem Black Gram crop must have sufficient water supply.
+
+                                          </div>
+                                        </div>            
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample42" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                        <div class="collapse" id="collapseExample42">
+                                          <div class="card card-body">
+                                            Black gram does well on heavier soils such as black cotton soils which retain moisture better.It can be grown all types of soils ranging from sandy loam to heavy clay, except the alkaline and saline soils.
+                                            Loam or slightly heavy soils with neutral pH are best suited for urdbean.Soil should be will drained and having good water holding capacity. Waterlogged, saline and alkaline soil should be avoided.
+                                           
+                                          </div>
+                                        </div>
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample43" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                        <div class="collapse" id="collapseExample43">
+                                          <div class="card card-body">
+                                            Anthracnose : <br>
+                                            This fungus attacks all the aerial parts and at any stage of plant growth.Symptoms are circular, black, sunken spots with a dark center and bright red-orange margins on leaves and pods.The pathogen survives on seed and plant debris.
+
+                    
+                                           <br> Bacterial Leaf Blight :  <br>
+                                          	The fungus attacks the foliage causing characteristic leaf spots and blight. Early blight is first observed on the plants as small, black lesions mostly on the older foliage.Spots enlarge, and by the time they are one-fourth inch in diameter or larger, concentric rings in a bull’s eye pattern can be seen in the center of the diseased area.
+                                        </div>
+                                        </div>        
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample44" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                        <div class="collapse" id="collapseExample44">
+                                          <div class="card card-body">
+                                            Spiny POd Bore <br>
+                                            Fungus <br>
+                                            Blue Butterfly <br>
+                                          
+                                          </div>
+                                        </div>                      
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample19 multiCollapseExample20" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                        <div class="row">
+                                        <div class="col">
+                                          <div class="collapse multi-collapse" id="multiCollapseExample19">
+                                            <div class="card card-body">
+                                              <h4 style="text-align: center;"> Fertilizers </h4>
+                                              Black gram being a leguminous crop requires a dose of 20 Kg/ha Nitrogen, 40 Kg/ha Phosphorous, 20 Kg/ha Potash and 20 Kg/ha Sulphur to get full potential of high yielding varieties. However, compost or FYM @ 5-10 t/ha should be applied during land preparation for improving soil structure                   </div>
+                                          </div>
+                                        </div>
+                                        <div class="col">
+                                          <div class="collapse multi-collapse" id="multiCollapseExample20">
+                                            <div class="card card-body">
+                                              <h4 style="text-align: center;"> Strategies</h4>
+                                              Use certified pathogen-free seed material.Avoid excessive weed growth. Provide good field sanitation. Crop rotation with non-host crops is recommended every three years.   </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                            <div id="crops12" style="display: none;">
+                              <div class="card">
+                                <div class="card-header" id="headingOne" style="background-color:green;">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link" id ="crop12" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve" style="color: white; font-size: 25px;">
+                                      <b> Sesame <i class="arrow down"></i></b>
+                                    </button>
+                                  </h2>
+                                </div>
+                                
+                                <div id="collapseTwelve" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body" style="background-color:orangered">
+                                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample45" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                          <div class="collapse" id="collapseExample45">
+                                            <div class="card card-body">
+                                            The Sesame plant (Sesamum indicum) is grown for its seeds. Commercial sesame production is largely for producing oil from the seeds. It is used in a variety of products, including soaps and pharmaceuticals. For the home gardener, this can be a fun plant to grow for the seeds and cooking. You can grow sesame seeds easily too, as long as you have the right climate for it. Sesame plants thrive in hot, dry weather. It is not hardy at all and will slow its growth or even stop growing at temperatures below 68 and 50 degrees Fahrenheit (20 to 10 Celsius). Sesame is extremely drought tolerant, but still needs water and will produce more seeds if irrigated.
+                                          </div>
+                                          </div>            
+                                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample46" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                          <div class="collapse" id="collapseExample46">
+                                            <div class="card card-body">
+                                              The sesame crop is grown as summer crop, kharif crop and also  known as semi-rabi crop. Sesame thrives well on soils with neutral reaction or slightly acidic type. There should not be any water stagnation in the soil, so make sure soil is well drained and light loamy soil for better growth performance. The preferred soil pH range of sesame crop is 5.5 to 8.0. Saline soils or too much sandy soils are not suitable for sesame cultivation. Adding well rotten farm yard manure to the soil is beneficial in getting higher yields.
+                                            </div>
+                                          </div>
+                                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample47" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                          <div class="collapse" id="collapseExample47">
+                                            <div class="card card-body">
+                                              Dry Root Rot : <br>
+                                          	The fungus attacks young seedling, their stems become water soaked soft and incapable of supporting the seedling which falls over and dies.On older seedlings elongated brownish black lesions appear which increase in length and width girdling the stem and plant dies.	The pathogen survives in seed and soil.
+                                           <br> Crescospora Leaf Spot :  <br>
+                                           Cercospora leaf spot, caused by the fungus Cercospora sesami, infects all above ground parts of the plant, resulting in complete defoliation which leads to severe economic losses. The disease, which affects leaves as early as 4 weeks after planting, starts as small pin head sized cottony spots on the infected leaves. These spots gradually spread on the lamina and can extend up to 4 mm in diameter. 
+                                            </div>
+                                          </div>        
+                                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample48" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                          <div class="collapse" id="collapseExample48">
+                                            <div class="card card-body">
+                                              Hawk Moth <br>
+                                              Gall Fly <br>
+                                            </div>
+                                          </div>                      
+                                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample21 multiCollapseExample22" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                          <div class="row">
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapseExample21">
+                                              <div class="card card-body">
+                                                <h4 style="text-align: center;"> Fertilizers </h4>
+                                                Phosphorus is very important in the early vegetative growth stages. Phosphorus promotes strong early plant growth and development of a strong root system. Potassium fertilization increases yields. Sesame will require approximately 40 to 80 pounds of nitrogen per acre on irrigated production and 25 to 60 pounds of nitrogen per acre on dry land production.                       </div>
+                                            </div>
+                                          </div>
+                                          <div class="col">
+                                            <div class="collapse multi-collapse" id="multiCollapseExample22">
+                                              <div class="card card-body">
+                                                <h4 style="text-align: center;"> Strategies</h4>
+                                                Prevention of the problem can be done by providing good air circulation. A small fan or simply cracking the lid of the germination tray will suffice. The biological fungicide Mycostop may also be used as a seed treatment to prevent seed or soil-borne diseases.                    </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              <div id="crops13" style="display: none;">
+                                <div class="card">
+                                  <div class="card-header" id="headingOne" style="background-color:green;">
+                                    <h2 class="mb-0">
+                                      <button class="btn btn-link" id ="crop13" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen" style="color: white; font-size: 25px;">
+                                        <b>Turmeric <i class="arrow down"></i></b>
+                                      </button>
+                                    </h2>
+                                  </div>
+                                  
+                                  <div id="collapseThirteen" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body" style="background-color:orangered">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample49" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                            <div class="collapse" id="collapseExample49">
+                                              <div class="card card-body">
+                                                Turmeric is most commonly and easily propagated by dividing the fleshy root and planting these segments. Turmeric seeds, though fairly rare and sometimes difficult to obtain, are another means by which turmeric is occasionally propagated.
+                                              </div>
+                                            </div>            
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample50" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                            <div class="collapse" id="collapseExample50">
+                                              <div class="card card-body">
+                                              Soils for turmeric cultivation should be rich and friable. Soils with little higher sand content (loams and sandy loams) are well suited. It is grown in different types of soils from light black, sandy loam and red soils to clay loams. It grows on light black , ashy loam, and red soils to stiff loams in rainfed areas.
+                                              </div>
+                                            </div>
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample51" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                            <div class="collapse" id="collapseExample51">
+                                              <div class="card card-body">
+                                                Rhizome Rot : <br>
+                                    Starting from the margins the leaves get dried up, collar region of pseudo stem becomes soft and water-soaked and plants collapse. The rhizomes decay as a result of the attack of the fungus.
+                        
+                                  <br> Leaf Blotch :  <br>
+                        
+                                    The disease is characterized by the appearance of several spots on both the surfaces of leaves, being generally numerous on the upper surface. They are arranged in rows along the veins. The spots coalesce freely and form irregular lesions. They first appear as pale yellow discolorations and then become dirty yellow in color. The infected leaves disort and have reddish brown appearance.
+                                              </div>
+                                            </div>        
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample52" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                            <div class="collapse" id="collapseExample52">
+                                              <div class="card card-body">
+                                                Thrips <br>
+                                                White Gurbs <br>
+                                              </div>
+                                            </div>                      
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample23 multiCollapseExample24" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                            <div class="row">
+                                            <div class="col">
+                                              <div class="collapse multi-collapse" id="multiCollapseExample23">
+                                                <div class="card card-body">
+                                                  <h4 style="text-align: center;"> Fertilizers </h4>
+                                                  Mostly for a good crop and maximum output natural fertilizers are the best, animal dung, and avoid using chemical or other harmful pesticides. Turmeric needs heavy manuring. Application of well rotten cow dung or compost from own farm is very helpful.
+
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col">
+                                              <div class="collapse multi-collapse" id="multiCollapseExample24">
+                                                <div class="card card-body">
+                                                  <h4 style="text-align: center;"> Strategies</h4>
+                                                  Select seed material from disease free areas.	Treat seed material with mancozeb 3g/litre of water or carbendazim 1 g/litre of water, for 30 minutes and shade dry before sowing.Spray mancoze 2.5 g/litre of water or carbendazim 1g/litre; 2-3 sprays at fortnightly intervals.
+                                                  The infected and dried leaves should be collected and burnt in order to reduce the inoculum source in the field.Spraying Blitox or Blue copper at 3 g/l of water was found effective against leaf spot.	Crop rotations should be followed whenever possible.
+                                                  </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                                <div id="crops14" style="display: none;">
+                                  <div class="card">
+                                    <div class="card-header" id="headingOne" style="background-color:green;">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link" id ="crop14" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen" style="color: white; font-size: 25px;">
+                                          <b>Jute <i class="arrow down"></i></b>
+                                        </button>
+                                      </h2>
+                                    </div>
+                                    
+                                    <div id="collapseFourteen" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                      <div class="card-body" style="background-color:orangered">
+                                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample53" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Propagation <i class="arrow2 down2"></i></button>   <br>    
+                                              <div class="collapse" id="collapseExample53">
+                                                <div class="card card-body">
+                                                  Jute is propagated by seed. The seed typically requires scarification to begin germination or seeds may be soaked in boiling water for ten seconds, then planted into raised beds 1 m. wide. If the plant is to be harvested by uprooting, seeds should be planted with a 30-50 cm row spacing. If leaves will be harvested by pruning, seedlings that have reached a height of 10 cm should be transplanted into rows and spaced 30-50 cm apart. Cow dung, wood ashes, rotted water hyacinth or its ashes may be used to enrich the soil. Leaf production improves with increases in water availability. Under cultivation, Jute is grown as an annual, though it may act as a perennial in some locations. It can be planted at the beginning of the rainy season and will withstand the hot, humid months. It can also withstand some drought conditions. Leaves and young shoots can be pruned from the plant as they emerge and are most desirable when young. Growth will continue and edible portions can be harvested continuously. Plants may also be uprooted and leaves removed from the stem for cooking. Fruit should be harvested when immature and tender. Jute is typically self-pollinating, though some out-crossing is possible. An isolation distance of 15 m between cultivars is recommended for seed production. Fruits should be allowed to dry on the stock, usually for 6 weeks after flowering. Dried pods can be beaten or threshed to release seeds.
+                                                </div>
+                                              </div>            
+                                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample54" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Land <i class="arrow2 down2"></i></button>  <br>
+                                              <div class="collapse" id="collapseExample54">
+                                                <div class="card card-body">
+                                                  River basins or alluvial or loamy soils are best for jute cultivation. Jute cultivation in red soils may require high dose of manure and pH range between 4.8 and 5.8 is best for its cultivation. Plain land or gentle slope or low land is ideal for jute cultivation.
+                                                </div>
+                                              </div>
+                                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample55" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Diseases <i class="arrow2 down2"></i></button>  <br>   
+                                              <div class="collapse" id="collapseExample55">
+                                                <div class="card card-body">
+                                               Bacterial Wilt    : <br>
+                                               The pathogen may also attack the roots causing wilting and death of the plant and on uprooting, blackish brown discoloration of the roots are seen. All the leaves fall from the infected plant and the stem looks black or dark brown.
+                                                <br>  :  <br>
+                                              	On young plant, the infection starts on collar region and cotyledons are also infected.	The affected seedlings show damping off symptoms.	Dark thin streaks develop at the collar region which may increase under humid condition.
+                                               On older plants, the leaves are attacked. Lesions appear on the margins and apex of the leaves.
+                                              </div>
+                                              </div>        
+                                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample56" aria-expanded="false" aria-controls="collapseExample" style="color: white; font-size: 15px;">Pests <i class="arrow2 down2"></i></button>  <br>
+                                              <div class="collapse" id="collapseExample56">
+                                                <div class="card card-body">
+                                                  Mealy Bug <br>
+                                                  Semi Looper <br>
+                                                </div>
+                                              </div>                      
+                                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample25 multiCollapseExample26" style="color: white; font-size: 15px;">Strategies & Fertilisers <i class="arrow2 down2"></i></button>
+                                              <div class="row">
+                                              <div class="col">
+                                                <div class="collapse multi-collapse" id="multiCollapseExample25">
+                                                  <div class="card card-body">
+                                                    <h4 style="text-align: center;"> Fertilizers </h4>
+                                                    Jute requires fewer amounts of fertilizers and pesticides as compared to a crop like cotton.
+                                                    The recommended doses of fertilizers are 40 to 80, 20 to 40, 20 to 40 kg/ha (olitorius) and 60 to 80, 30 to 40, 30 to 40 kg/ha (capsularis) of N:P:K respectively . In heavy soils with low to moderate rainfall, all nutrients are applied as basal.
+                                                                           </div>
+                                                </div>
+                                              </div>
+                                              <div class="col">
+                                                <div class="collapse multi-collapse" id="multiCollapseExample26">
+                                                  <div class="card card-body">
+                                                    <h4 style="text-align: center;"> Strategies</h4>
+                                                    	Collection of healthy seeds from the infection free area.Crop rotation with paddy.Spraying fungicide before sowing seedlings.Early harvesting.
+                                                 </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+          </div>
+      <script src="explore.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Headings */
+
+.big-heading {
+    padding-top: 20px;
+    font-size: 3.5rem;
+    margin-left: 10px;
+    color: #ffcc80;
+  }
+  
+  .tag-line {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    margin-left: 135px;
+    padding-bottom: 20px;
+  }
+
+
+  .small-heading {
+    padding-top: 20px;
+    font-size: 3rem;
+    margin-left: 10px;
+    color: #006600;
+  }
+  /* Containers */
+
+.container-fluid{
+    padding: 7% 15%;
+  }
+
+  
+/* Sections */
+
+
+
+
+/* Title Section */
+
+#title {
+    background-color: #009900;
+    color: #fff;
+    text-align: left;
+  }
+  
+#title .container-fluid {
+    width: 100%;
+    padding: 3% 15% 7%;
+}
+
+
+/* text on image */
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.top-left {
+  margin-top: 150px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.text{
+  font-size: 25px;
+}
+.heading{
+  font-size: 40px;
+}
+
+@media screen and (max-width: 600px)
+{
+  .text{
+  font-size: 8px;
+}
+  .heading{
+    font-size: 15px;
+  }
+}
+
+
+
+/*login */
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('https://res.cloudinary.com/mhmd/image/upload/v1555917661/art-colorful-contemporary-2047905_dxtao7.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
